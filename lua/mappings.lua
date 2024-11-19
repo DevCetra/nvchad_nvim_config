@@ -95,7 +95,7 @@ map(
 
 -- Continue execution in the debugger.
 map(
-  [<35;69;33M"n",
+  "n",
   "<Leader>dc",
   "<cmd>lua require'dap'.continue()<CR>",
   { desc = "Debugger continue" }
