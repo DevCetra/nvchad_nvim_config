@@ -5,6 +5,7 @@
 1. Install NeoVim, NvChad, Dart, Flutter, Rust, Node, git, etc.
 2. Copy contents of repo to `~/.config/nvim/`.
 
-## Copilot Setup
+## Codeium Setup (Copilot Alternative)
 
-Authenticate via `:Copilot auth`
+- `https://github.com/Exafunction/codeium.vim?tab=readme-ov-file#-installation-options`
+- `https://codeium.com/`
