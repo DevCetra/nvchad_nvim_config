@@ -29,6 +29,11 @@ require("lazy").setup({
 dofile(vim.g.base46_cache .. "defaults")
 dofile(vim.g.base46_cache .. "statusline")
 
+-- Set textwidth
+vim.o.textwidth = 100
+-- Set colorcolumn (for visual guide)
+vim.o.colorcolumn = "80,100"
+
 require "options"
 require "nvchad.autocmds"
 
