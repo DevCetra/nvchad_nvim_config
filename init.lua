@@ -33,6 +33,10 @@ dofile(vim.g.base46_cache .. "statusline")
 vim.o.textwidth = 100
 -- Set colorcolumn (for visual guide)
 vim.o.colorcolumn = "80,100"
+-- Enable absolute line numbers
+vim.wo.number = true
+-- Enable relative line numbers
+vim.wo.relativenumber = true
 
 require "options"
 require "nvchad.autocmds"
@@ -40,3 +44,4 @@ require "nvchad.autocmds"
 vim.schedule(function()
   require "mappings"
 end)
+

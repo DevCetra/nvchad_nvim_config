@@ -8,7 +8,7 @@ local map = vim.keymap.set
 
 -- Exit insert mode using 'jk' (while in insert mode).
 map(
-  'i',
+  {'i'},
   'jk',
   '<Esc>',
   {
@@ -50,11 +50,22 @@ map(
   }
 )
 
--- F16: Enter Terminal mode (from any mode).
+-- F16: Enter Command mode (from any mode).
 map(
   {'i', 'n', 'v', 'c', 't'},
   '<F16>',
   '<Esc><Cmd>call feedkeys(":")<CR>',
+  {
+    noremap = true,
+    silent = true,
+  }
+)
+
+-- F19: Exit Terminal mode.
+map(
+  't',
+  '<F19>',
+  'exit<CR>',
   {
     noremap = true,
     silent = true,

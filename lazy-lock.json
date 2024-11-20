@@ -22,6 +22,7 @@
   "minty": { "branch": "main", "commit": "b454ca0229f8e22a631fd3c014ec99973fb8cad4" },
   "nvim-autopairs": { "branch": "master", "commit": "b464658e9b880f463b9f7e6ccddd93fb0013f559" },
   "nvim-cmp": { "branch": "main", "commit": "40a03dc225383c4f6256596c2cdf27e03b8119b5" },
+  "nvim-color-line-numbers-by-mode": { "branch": "main", "commit": "bdd2e07b41ad7df2029edf0006a8ac28e9c27d78" },
   "nvim-dap": { "branch": "master", "commit": "cc92b054720a96170eca6bd9bdedd43d2b0a7a8a" },
   "nvim-dap-ui": { "branch": "master", "commit": "ffa89839f97bad360e78428d5c740fdad9a0ff02" },
   "nvim-lspconfig": { "branch": "master", "commit": "f012c1b176f0e3c71f40eb309bdec0316689462e" },
