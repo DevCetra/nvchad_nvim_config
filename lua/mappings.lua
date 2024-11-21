@@ -8,7 +8,7 @@ local map = vim.keymap.set
 
 -- Exit insert mode using 'jk' (while in insert mode).
 map(
-  {'i'},
+  { 'i' },
   'jk',
   '<Esc>',
   {
@@ -19,7 +19,7 @@ map(
 
 -- F13: Enter Normal mode (from any mode).
 map(
-  {'i', 'n', 'v', 'c', 't'},
+  { 'i', 'n', 'v', 'c', 't' },
   '<F13>',
   '<Esc> ',
   {
@@ -30,7 +30,7 @@ map(
 
 -- F14: Enter Insert mode (from any mode).
 map(
-  {'i', 'n', 'v', 'c', 't'},
+  { 'i', 'n', 'v', 'c', 't' },
   '<F14>',
   '<Esc>i',
   {
@@ -41,7 +41,7 @@ map(
 
 -- F15: Enter Visual mode (from any mode).
 map(
-  {'i', 'n', 'v', 'c', 't'},
+  { 'i', 'n', 'v', 'c', 't' },
   '<F15>',
   '<Esc>v',
   {
@@ -52,7 +52,7 @@ map(
 
 -- F16: Enter Command mode (from any mode).
 map(
-  {'i', 'n', 'v', 'c', 't'},
+  { 'i', 'n', 'v', 'c', 't' },
   '<F16>',
   '<Esc><Cmd>call feedkeys(":")<CR>',
   {
@@ -89,7 +89,7 @@ map(
 
 -- Refactor a symbol.
 map(
-  {'n', 'v'},
+  { 'n', 'v' },
   '<Leader>rs',
   '<cmd>lua vim.lsp.buf.rename()<CR>',
   {
@@ -101,7 +101,7 @@ map(
 
 -- Replace text using regex pattern.
 map(
-  {'n', 'v'},
+  { 'n', 'v' },
   '<Leader>rr',
   '<cmd>lua ReplaceUsingRegex()<CR>',
   {
@@ -150,10 +150,10 @@ map(
 function ReplaceUsingRegex()
   -- Prompt for the regex pattern
   local pattern = vim.fn.input('Regex pattern to replace: ')
-  
+
   -- Prompt for the replacement string
   local replacement = vim.fn.input('Replacement: ')
-  
+
   -- If both pattern and replacement are provided, perform the replacement
   if pattern ~= '' and replacement ~= '' then
     -- Use 'substitute' command with valid pattern and replacement
@@ -261,12 +261,12 @@ map(
 )
 
 --------------------------------------------------------------------------------
--- Git
+-- Git Mappings
 --------------------------------------------------------------------------------
 
 map(
   'n',
   '<Leader>gh',
   ':Gitsigns preview_hunk<CR>',
-  { }
+  {}
 )
