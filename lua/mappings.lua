@@ -6,6 +6,17 @@ local map = vim.keymap.set
 -- General Mappings
 --------------------------------------------------------------------------------
 
+-- Exit terminal mode using 'C-w'..
+map(
+  't',
+  '<C-w>',
+  '<C-\\><C-N>',
+  {
+    noremap = true,
+    silent = true,
+  }
+)
+
 -- Exit insert mode using 'jk' (while in insert mode).
 map(
   { 'i' },
