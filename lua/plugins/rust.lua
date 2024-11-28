@@ -15,6 +15,7 @@ return {
         dap = {
           adapter = cfg.get_codelldb_adapter(codelldb_path, liblldb_path),
         },
+        auto_focus = true,
       }
     end
   },
