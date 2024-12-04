@@ -8,6 +8,8 @@ local opts = { noremap = true, silent = true }
 -- General Mappings
 --------------------------------------------------------------------------------
 
+map('n', '<Leader>//-', function() require('configs.add_comment_separator').add_comment_separator() end, opts)
+
 -- Toggle line diagnostics.
 map('n', '<Leader>xt', function() vim.diagnostic.open_float({ scope = "line" }) end, opts)
 
